@@ -1,0 +1,12 @@
+joseluisgm1998+sistemasdistribuidos1@gmail.com
+    s1  
+    ssh -i "s1.pem" ubuntu@ec2-54-82-119-82.compute-1.amazonaws.com
+    54.82.119.82
+joseluisgm1998+sistemasdistribuidos2@gmail.com
+    s2
+    ssh -i "s2.pem" ubuntu@ec2-54-174-40-228.compute-1.amazonaws.com
+    54.174.40.228
+joseluisgm1998+sistemasdistribuidos3@gmail.com
+    s3
+    ssh -i "s3.pem" ubuntu@ec2-54-90-69-52.compute-1.amazonaws.com
+    54.90.69.52
