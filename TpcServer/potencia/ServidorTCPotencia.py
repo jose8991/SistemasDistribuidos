@@ -1,6 +1,6 @@
 import socket
 ## Python 3.7 
-TCP_IP = '54.80.47.180'
+TCP_IP = '127.0.0.1'
 TCP_PORT = 5555 # > 1024 && < 65535
 BUFFER_SIZE = 1024
 potencia=0

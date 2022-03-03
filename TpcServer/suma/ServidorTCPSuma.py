@@ -1,7 +1,7 @@
 from logging import exception
 import socket
 ## Python 3.7 
-TCP_IP = '54.82.119.82'
+TCP_IP = '127.0.0.1'
 TCP_PORT = 5000 # > 1024 && < 65535
 BUFFER_SIZE = 1024
 suma=0
@@ -13,7 +13,7 @@ except Exception as e:
   print (e)
 s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 s.listen(5)
-print ("Servidor escuchando...")
+print ("Servidor la suma")
 
 while 1:
   conn, addr = s.accept()  
