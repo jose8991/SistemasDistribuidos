@@ -1,10 +1,10 @@
 from logging import exception
 import socket
 ## Python 3.7 
-TCP_IP = '54.82.119.82'
-TCP_PORT = 5000 # > 1024 && < 65535
+TCP_IP = '127.0.0.1'
+TCP_PORT = 5111 # > 1024 && < 65535
 BUFFER_SIZE = 1024
-suma=0
+log=0
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 try:
@@ -28,9 +28,9 @@ while 1:
   if not data2: break
   print ("Dato recibido: ", data2)
   
-  suma=int(data1) + int(data2)
-  print ("Dato enviado: ", suma)
-  conn.send(str(suma).encode("UTF-8"))  
+  log=log(int(data1),int(data2))
+  print ("Dato enviado: ", log)
+  conn.send(str(log).encode("UTF-8"))  
 
   conn.close()
 
