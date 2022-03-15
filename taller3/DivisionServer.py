@@ -4,7 +4,7 @@ from jsonrpclib.SimpleJSONRPCServer import SimpleJSONRPCServer
 class Funciones:
     Cadena = ''
     def __init__(self):
-        self.Cadena = 'Division Server'
+        self.Cadena = 'Division'
     def division(self, x, y):
         if(y != 0):
             return x / y
@@ -14,7 +14,7 @@ class Funciones:
 def main():
 	server = SimpleJSONRPCServer(('localhost', 5004))
 	server.register_instance(Funciones())
-	print("Division Server Corriendo")
+	print("Servidor division Corriendo")
 	server.serve_forever()
     
 if __name__ == '__main__':  

@@ -9,7 +9,7 @@ def main():
     while (operation != 7) :
         system("cls")
         print ("----------------------------------")
-        print("¿Qué desea hacer a continuación?")
+        print("eliga la operación que quiere hacer")
         print("1. Sumar")
         print("2. Restar")
         print("3. Multiplicar")

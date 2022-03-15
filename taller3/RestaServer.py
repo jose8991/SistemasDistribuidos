@@ -1,18 +1,17 @@
 # server program
 from jsonrpclib.SimpleJSONRPCServer import SimpleJSONRPCServer
-from math import log 
 
 class Funciones:
     Cadena = ''
     def __init__(self):
-        self.Cadena = 'Logaritmica Server'
-    def logaritmo(self, x, y):
-        return log(x, y)
+        self.Cadena = 'Resta'
+    def resta(self, x, y):
+        return x - y
 
 def main():
-	server = SimpleJSONRPCServer(('localhost', 5006))
+	server = SimpleJSONRPCServer(('localhost', 5002))
 	server.register_instance(Funciones())
-	print("Logaritmica Server Corriendo")
+	print("servidor resta corriendo")
 	server.serve_forever()
 if __name__ == '__main__':  
     main()
