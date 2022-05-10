@@ -1,7 +1,8 @@
 import Crypto
 from Crypto.PublicKey import RSA
 from Crypto.Cipher import PKCS1_OAEP
-
+#pip uninstall crypto pycryptodome
+#pip install pycryptodome
 # generación de un par de llaves asimétricas
 keyPair = RSA.generate(2048)
 
